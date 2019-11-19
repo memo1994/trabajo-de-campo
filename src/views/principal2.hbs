@@ -1,0 +1,22 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Código</th>
+      <th scope="col">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each registrados}}
+    <tr>
+      <td> {{NOMBRES}} </td>
+      <td> {{APELLIDOS}} </td>
+      <td> {{CODIGO}} </td>
+      <td> <a class="btn btn-primary" href="/registrado/{{ID}}" role="button">Link</a> </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<a class="btn btn-primary" href="/c_rol" role="button">Crear rol</a>

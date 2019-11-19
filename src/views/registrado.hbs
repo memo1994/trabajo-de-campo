@@ -1,0 +1,327 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <br>
+        <img src="uptc.jpg" width="15%" style="float: left;">
+        <img src="sig.png"  width="10%" style="float: right;">
+        <h1 class="encabezado" style="text-align: center; ">MACROPROCESO: BIENESTAR<br>PROCESO: GESTIÓN DE BIENESTAR UNIVERSITARIO<br>PROCEDIMIENTO: ACTIVIDAD FÍSICA<br>FORMULARIO INSCRIPCIÓN ESTUDIANTES</h1>
+      </div>
+      <div class="col-12">
+        <br>
+        <center><h3><b>DATOS PERSONALES</b></h3></center>
+        <br>
+        <div>
+          <div class="form-group">
+            <h5>Nombres</h5>
+            <p>{{form.nombres}}</p>
+            <br>
+          </div>
+          <div class="form-group">
+            <h5>Apellidos</h5>
+            <p>{{form.apellidos}}</p>
+            <br>
+          </div>
+          <div class="form-group">
+            <h5>Doc. Identidad</h5>
+            <p>{{form.documento}}</p>
+            <br>
+          </div>
+          <div class="form-group">
+            <h5>Código</h5>
+            <p>{{form.codigo}}</p>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Fecha de Nacimiento</h5>
+                <p>{{form.fecha_nacimiento}}</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row">
+                  <div class="col">
+                    <h5>Edad</h5>
+                    <p>{{form.edad}}</p>
+                  </div>
+                  <div class="col">
+                    <h5 for="genero">Genero</h5>
+                    <p>{{form.genero}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Celular</h5>
+                <p>{{form.celular}}</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Correo Institucional</h5>
+                <p>{{form.email}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <h5>EPS</h5>
+                <p>{{form.eps}}</p>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <h5>Grupo sanguíneo -RH</h5>
+                <p>{{form.rh}}</p>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <h5>ARL</h5>
+                <p>{{form.arl}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <h5 for="alergia">Alergia a Medicamentos</h5>
+                <p>{{form.alergia}}</p>
+              </div>
+              <div class="col-sm-12 col-md-8 col-lg-8">
+                <h5>Cuál</h5>
+                <p>{{form.c_alergia}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <h5>En caso de emergencia informar a</h5>
+            <p>{{form.pariente}}</p>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Teléfono</h5>
+                <p>{{form.tel_pariente}}</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Parentesco</h5>
+                <p>{{form.parentesco}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <br>
+        <center><h3><b>HISTORIA MÉDICA</b></h3></center>
+        <br>
+        <div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 for="p1">¿A sufrido o sufre actualmente algún problema cardiaco?</h5>
+                <p>{{form.HM1}}</p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>Cuál</h5>
+                <p>{{form.HM1C}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 for="p2">¿A sufrido o sufre actualmente algún problema respiratorio o enfermedad pulmonar?</h5>
+                <p>{{form.HM2}}</p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>Cuál</h5>
+                <p>{{form.HM2C}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <h5 for="p3">¿Ha tenido molestias, dolor o presión en el pecho  al realizar ejercicio?</h5>
+              <p>{{form.HM3}}</p>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <h5 for="p4">¿Presenta ahogo inusual, se siente cansado con facilidad, con excesiva fatiga al realizar actividad física leve?</h5>
+              <p>{{form.HM4}}</p>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <h5 for="p5">¿Ha tenido o tiene con el ejercicio mareo, nauseas, sincopes o desmayos?</h5>
+              <p>{{form.HM5}}</p>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 for="p6">¿Tiene alguna enfermedad neurológica?</h5>
+                <p>{{form.HM6}}</p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>Cuál</h5>
+                <p>{{form.HM6C}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 for="p7">¿Ha tenido o tiene problemas articulares, musculares u óseos? (desgarro, esguince, trauma, fractura )</h5>
+                <p>{{form.HM7}}</p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>Describa</h5>
+                <p>{{form.HM7C}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <h5 for="p8">¿Ha presentado algún dolor o molestia articular o muscular en las últimas dos (2) semanas?</h5>
+              <p>{{form.HM8}}</p>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 for="p9">¿Tiene algún factor de riesgo cardiovascular (colesterol alto, diabetes, obesidad, estrés, tabaquismo, sedentarismo, consumo de alcohol excesivo?</h5>
+                <p>{{form.HM9}}</p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>Cuál</h5>
+                <p>{{form.HM9C}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 for="p10">¿Toma algún medicamento?</h5>
+                <p>{{form.HM10}}</p>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Cuál es el medicamento</h5>
+                <p>{{form.HM10C}}</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Cuál es la dosis medicada</h5>
+                <p>{{form.HM10C2}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 for="p11">¿Existe algún otro problema o enfermedad no mencionada aquí que debiera confiarnos, para evitar imprevistos a la hora de realizar la actividad física?</h5>
+                <p>{{form.HM11}}</p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>Cuál</h5>
+                <p>{{form.HM11C}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <br>
+        <center><h3><b>HÁBITOS</b></h3></center>
+        <br>
+        <div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 for="h1">¿Realiza habitualmente Actividad Física o Deporte que implican un aumento importante de la respiración o del ritmo cardiaco almenos durante 15 minutos continuos?</h5>
+                <p>{{form.HA1}}</p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>Cuál</h5>
+                <p>{{form.HA1C}}</p>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>Cuantas veces a la semana?</h5>
+                <p>{{form.HA2C}}</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Horas</h5>
+                <p>{{form.HA3C}}</p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h5>Minutos</h5>
+                <p>{{form.HA4C}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>¿Cuándo fue la última vez que estuvo en un programa de actividad física?</h5>
+                <p>{{form.HA2}}</p>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <br>
+        <h4>Los beneficios que espero conseguir con la práctica de ejercicio físico en el gimnasio son:</h4>
+        <br>
+        <div>
+          {{#each bene}}
+          <div class="form-check">
+            <h5 class="form-check-h5">
+              {{beneficio}}
+            </h5>
+          </div>
+          {{/each}}
+        </div>
+      <br>
+      </div>
+      <br>
+      <br>
+      <div class="col-12" style="border-bottom: 2px solid">
+      <br>
+        <h4>Necesita valoración médica?</h4>
+        <br>
+        <a class="btn btn-success" href="#" role="button">SI</a>
+        <a class="btn btn-danger" href="#" role="button">NO</a>
+      </div>
+      <div class="col">
+      <br>
+        <center><img src="bienestar.jpg" width="15%"></center>
+      </div>
+    </div>
+  </div>

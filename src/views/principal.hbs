@@ -1,0 +1,399 @@
+<div class="container">
+    <div class="row">
+      <form class="col" action="/principal" method="POST">
+      <div class="col-12">
+        <br>
+        <img src="uptc.jpg" width="15%" style="float: left;">
+        <img src="sig.png"  width="10%" style="float: right;">
+        <h1 class="encabezado" style="text-align: center; ">MACROPROCESO: BIENESTAR<br>PROCESO: GESTIÓN DE BIENESTAR UNIVERSITARIO<br>PROCEDIMIENTO: ACTIVIDAD FÍSICA<br>FORMULARIO INSCRIPCIÓN ESTUDIANTES</h1>
+      </div>
+      <div class="col-12">
+        <br>
+        <center><h3><b>DATOS PERSONALES</b></h3></center>
+        <br>
+        <div>
+          <div class="form-group">
+            <label>Nombres</label>
+            <input type="text" name="nombres" class="form-control" required>
+            <br>
+          </div>
+          <div class="form-group">
+            <label>Apellidos</label>
+            <input type="text" name="apellidos" class="form-control" required>
+            <br>
+          </div>
+          <div class="form-group">
+            <label>Doc. Identidad</label>
+            <input type="text" name="documento" class="form-control" required>
+            <br>
+          </div>
+          <div class="form-group">
+            <label>Código</label>
+            <input type="text" name="codigo" class="form-control" required>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Fecha de Nacimiento</label>
+                <input type="text" name="fecha_nacimiento" class="form-control" placeholder="DD-MM-AAAA" required>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row">
+                  <div class="col">
+                    <label>Edad</label>
+                    <input type="text" name="edad" class="form-control" required>
+                  </div>
+                  <div class="col">
+                    <label for="genero">Genero</label>
+                    <select class="form-control" name="genero">
+                      <option>Masculino</option>
+                      <option>Femenino</option>
+                      <option>Otro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Celular</label>
+                <input type="text" name="celular" class="form-control" required>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Correo Institucional</label>
+                <input type="email" name="email" class="form-control" required>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <label>EPS</label>
+                <input type="text" name="eps" class="form-control" required>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <label>Grupo sanguíneo -RH</label>
+                <input type="text" name="rh" class="form-control" required>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <label>ARL</label>
+                <input type="text" name="arl" class="form-control">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <label for="alergia">Alergia a Medicamentos</label>
+                <select class="form-control" name="alergia">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-8 col-lg-8">
+                <label>Cuál</label>
+                <input type="text" name="c_alergia" class="form-control">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <label>En caso de emergencia informar a</label>
+            <input type="text" name="pariente" class="form-control" required>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Teléfono</label>
+                <input type="text" name="tel_pariente" class="form-control" required>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Parentesco</label>
+                <input type="text" name="parentesco" class="form-control" required>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <br>
+        <center><h3><b>HISTORIA MÉDICA</b></h3></center>
+        <br>
+        <div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label for="p1">¿A sufrido o sufre actualmente algún problema cardiaco?</label>
+                <select class="form-control" name="hm1">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>Cuál</label>
+                <input type="text" class="form-control" name="hm1c">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label for="p2">¿A sufrido o sufre actualmente algún problema respiratorio o enfermedad pulmonar?</label>
+                <select class="form-control" name="hm2">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>Cuál</label>
+                <input type="text" class="form-control" name="hm2c">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label for="p3">¿Ha tenido molestias, dolor o presión en el pecho  al realizar ejercicio?</label>
+              <select class="form-control" name="hm3">
+                <option>SI</option>
+                <option>NO</option>
+              </select>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label for="p4">¿Presenta ahogo inusual, se siente cansado con facilidad, con excesiva fatiga al realizar actividad física leve?</label>
+              <select class="form-control" name="hm4">
+                <option>SI</option>
+                <option>NO</option>
+              </select>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label for="p5">¿Ha tenido o tiene con el ejercicio mareo, nauseas, sincopes o desmayos?</label>
+              <select class="form-control" name="hm5">
+                <option>SI</option>
+                <option>NO</option>
+              </select>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label for="p6">¿Tiene alguna enfermedad neurológica?</label>
+                <select class="form-control" name="hm6">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>Cuál</label>
+                <input type="text" class="form-control" name="hm6c">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label for="p7">¿Ha tenido o tiene problemas articulares, musculares u óseos? (desgarro, esguince, trauma, fractura )</label>
+                <select class="form-control" name="hm7">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>Describa</label>
+                <input type="text" class="form-control" name="hm7c">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <label for="p8">¿Ha presentado algún dolor o molestia articular o muscular en las últimas dos (2) semanas?</label>
+              <select class="form-control" name="hm8">
+                <option>SI</option>
+                <option>NO</option>
+              </select>
+            </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label for="p9">¿Tiene algún factor de riesgo cardiovascular (colesterol alto, diabetes, obesidad, estrés, tabaquismo, sedentarismo, consumo de alcohol excesivo?</label>
+                <select class="form-control" name="hm9">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>Cuál</label>
+                <input type="text" class="form-control" name="hm9c">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label for="p10">¿Toma algún medicamento?</label>
+                <select class="form-control" name="hm10">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Cuál es el medicamento</label>
+                <input type="text" class="form-control" name="hm10c">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Cuál es la dosis medicada</label>
+                <input type="text" class="form-control" name="hm10c2">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label for="p11">¿Existe algún otro problema o enfermedad no mencionada aquí que debiera confiarnos, para evitar imprevistos a la hora de realizar la actividad física?</label>
+                <select class="form-control" name="hm11">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>Cuál</label>
+                <input type="text" class="form-control" name="hm11c">
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <br>
+        <center><h3><b>HÁBITOS</b></h3></center>
+        <br>
+        <div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label for="h1">¿Realiza habitualmente Actividad Física o Deporte que implican un aumento importante de la respiración o del ritmo cardiaco almenos durante 15 minutos continuos?</label>
+                <select class="form-control" name="ha1">
+                  <option>SI</option>
+                  <option>NO</option>
+                </select>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>Cuál</label>
+                <input type="text" class="form-control" name="ha1c">
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>Cuantas veces a la semana?</label>
+                <input type="text" class="form-control" name="ha2c">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Horas</label>
+                <input type="text" class="form-control" name="ha3c">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Minutos</label>
+                <input type="text" class="form-control" name="ha4c">
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <label>¿Cuándo fue la última vez que estuvo en un programa de actividad física?</label>
+                <input type="text" class="form-control" name="ha2" required>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <br>
+        <h4>Los beneficios que espero conseguir con la práctica de ejercicio físico en el gimnasio son:</h4>
+        <br>
+        <div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Salud y bienestar" name="b1">
+            <label class="form-check-label">
+              Salud y bienestar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Recreación" name="b2">
+            <label class="form-check-label">
+              Recreación
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Acondicionamiento físico" name="b3">
+            <label class="form-check-label">
+              Acondicionamiento físico
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Aumento de masa muscular" name="b4">
+            <label class="form-check-label">
+              Aumento de masa muscular
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Bajar de peso" name="b5">
+            <label class="form-check-label">
+              Bajar de peso
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Rendimiento Deportivo" name="b6">
+            <label class="form-check-label">
+              Rendimiento Deportivo
+            </label>
+          </div>
+        </div>
+      <br>
+      </div>
+      <br>
+      <br>
+      
+      <div class="col-12" style="border-bottom: 2px solid">
+      <br>
+        <center><p style="color: grey"><b><i>Afirmo que toda la información suministrada en este formulario es real y asumo la responsabilidad por cualquier omisión o falsedad diligenciada en la misma.</i></b></p></center>
+      </div>
+      <div class="col">
+      <br>
+        <center><img src="bienestar.jpg" width="15%"></center>
+      </div>
+      <button type="submit" class="btn btn-dark">Enviar</button><br>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,46 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>Crear Rol</h3>
+        </div>
+        <div class="card-body">
+          <form action="/c_rol" method="POST">
+            <div class="form-group">
+              <input type="type" name="nombres" placeholder="Nombres" class="form-control" autofocus>
+            </div>
+            <div class="form-group">
+              <input type="text" name="apellidos" placeholder="Apellidos" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" name="documento" placeholder="Documento" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" name="codigo" placeholder="Código" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" name="celular" placeholder="Celular" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Correo" class="form-control">
+            </div>
+            <div class="col">
+              <label for="genero">Rol</label>
+              <select class="form-control" name="rol">
+                <option>Instructor</option>
+                <option>Administrador</option>
+              </select>
+              <br>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success btn-block">
+                Crear
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
